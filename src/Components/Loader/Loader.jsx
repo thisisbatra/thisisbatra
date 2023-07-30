@@ -1,11 +1,13 @@
 import React from 'react';
-
+import styles from "./Loader.module.css";
 
 const Loader = () => {
     return (
-        <>
-            hello!
-        </>
+        <section className={styles.section}>
+                <div className={styles.circle}></div>
+                <div className={styles.square}></div>
+                <div className={styles.triangle}></div>
+        </section>
     );
 }
 

@@ -1,0 +1,29 @@
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    height: 40rem;
+    width: 40rem;
+    flex-direction: row;
+}
+.section div{
+    padding: 5rem;
+    margin: .5rem;
+}
+.section .square{
+    background-color: #EA4335;
+}
+.section .circle{
+    background-color: #4285F4;
+    border-radius: 50%;
+}
+.section .triangle{
+    width: 0;
+    height: 0;
+    padding: 0;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+    border-bottom: 10rem solid  #F4C22F;
+    /* background-color: #F4C22F; */
+}
