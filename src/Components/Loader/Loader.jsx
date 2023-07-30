@@ -4,9 +4,13 @@ import styles from "./Loader.module.css";
 const Loader = () => {
     return (
         <section className={styles.section}>
-                <div className={styles.circle}></div>
-                <div className={styles.square}></div>
-                <div className={styles.triangle}></div>
+                <div>
+                    <span className={styles.circle}></span>
+                    <span className={styles.square}></span>
+                </div>
+                <div>
+                    <span className={styles.triangle}></span>
+                </div>
         </section>
     );
 }
