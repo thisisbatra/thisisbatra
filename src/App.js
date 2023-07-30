@@ -1,22 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import Home from './Components/Home/Home';
-import Loader from './Components/Loader/Loader';
+import React from 'react';
+import GlobalLoader from './Components/GlobalRoutingLoader/GlobalRoutingLoader';
 
-const App = (props) => {
 
-  const [valForLoader,setValForLoader]=useState(true);
-
-  useEffect(()=>{
-    setTimeout(()=>{
-        setValForLoader(false);
-    },2000)
-  },[])
-
+const App = () => {
   return (
     <>
-      {valForLoader?<Loader/>:<Home/>}
+      <GlobalLoader/>
     </>
   );
 }
 
 export default App;
+
