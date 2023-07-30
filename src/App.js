@@ -1,11 +1,11 @@
 import React from 'react';
-import GlobalLoader from './Components/GlobalRoutingLoader/GlobalRoutingLoader';
+import GlobalRoutingLoader from './Components/GlobalRoutingLoader/GlobalRoutingLoader';
 
 
 const App = () => {
   return (
     <>
-      <GlobalLoader/>
+      <GlobalRoutingLoader/>
     </>
   );
 }

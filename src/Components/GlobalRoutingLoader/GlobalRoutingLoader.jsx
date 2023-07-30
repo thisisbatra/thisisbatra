@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Loader from '../Loader/Loader';
 import Home from '../Home/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PageNotFound from '../PageNotFound/PageNotFound';
 
 
 const BrowseRoute=()=>{
@@ -9,7 +10,7 @@ const BrowseRoute=()=>{
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home/>}/>
-                <Route path='*' element={<Home/>}/>
+                <Route path='*' element={<PageNotFound/>}/>
             </Routes>
         </BrowserRouter>      
     );
