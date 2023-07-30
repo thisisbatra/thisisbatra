@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import Loader from "./Components/Loader/Loader";
-
+import Home from './Components/Home/Home';
+import Loader from './Components/Loader/Loader';
 
 const App = (props) => {
 
   const [valForLoader,setValForLoader]=useState(true);
-  useEffect(()=>{
 
+  useEffect(()=>{
+    setTimeout(()=>{
+        setValForLoader(false);
+    },2000)
   },[])
+
   return (
-    <Loader/>
+    <>
+      {valForLoader?<Loader/>:<Home/>}
+    </>
   );
 }
 
