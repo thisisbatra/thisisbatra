@@ -8,11 +8,11 @@
     flex-direction: column;
 }
 .section span{
-    padding: 2rem;
+    padding: 1.5rem;
     margin: .5rem;
 }
 .section div{
-    width: 10rem;
+    width: 8rem;
     display: flex;
     flex-direction: row;
 }
@@ -24,8 +24,8 @@
     background-color: #4285F4;
     border-radius: 50%;
     animation-name: animateCircle;
-    animation-duration: 3s;
-    animation-delay: 2.5s;
+    animation-duration: 4s;
+    animation-delay: 2s;
     animation-iteration-count: 1;
 }
 .section .square{
@@ -33,7 +33,7 @@
     background-color: #EA4335;
     animation-name: animateSquare;
     animation-duration: 4s;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     animation-iteration-count: 1;
 }
 .section .triangle{
@@ -41,9 +41,9 @@
     width: 0;
     height: 0;
     padding: 0;
-    border-left: 2rem solid transparent;
-    border-right: 2rem solid transparent;
-    border-bottom: 4rem solid  #F4C22F;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 3rem solid  #F4C22F;
     animation-name: animateTriangle;
     animation-duration: 4s;
     animation-delay: 1s;
