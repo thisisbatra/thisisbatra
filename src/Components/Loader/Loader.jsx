@@ -5,7 +5,9 @@ const Loader = () => {
     return (
         <section className={styles.section}>
                 <div>
-                    <span className={styles.circle}></span>
+                    <span className={styles.circle}>
+                        <span className={styles.quarter}></span>
+                    </span>
                     <span className={styles.square}></span>
                 </div>
                 <div>
