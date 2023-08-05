@@ -1,7 +1,18 @@
-.section{
+.section {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1E1E1E;
+}
+.section .div{
+    padding: 1rem;
+    height: 10rem;
+    color: white;
+}
+.section .div .heading{
+    font-family: 'Handjet', cursive;
 }
 .button{
     padding: 0.5rem;
@@ -12,7 +23,7 @@
     border-radius: 0.3rem;
     cursor: pointer;
     transition: 0.8s;
-    box-shadow: 1px 1px 3px 1px lightgray;
+    box-shadow: 1px 1px 3px 1px black;
 }
 .button:hover{
     border: 1px solid red;
