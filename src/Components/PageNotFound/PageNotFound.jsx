@@ -14,9 +14,7 @@ const PageNotFound = () => {
                     <p className={Styles.para}>I am sorry, but the page you have requested was not found :(</p>
                     <div className={Styles.buttonBox}>
                         <button onClick={onRedirectclick} className={Styles.button}>Redirect</button>
-                        <span className={Styles.buttonCase}></span>
                     </div>
-                    
                 </div>
             </section>
         </>

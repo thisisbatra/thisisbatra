@@ -25,39 +25,57 @@
 .buttonBox{
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 0;
 }
-.buttonCase{
+
+.button{
+    all: unset;
     position: relative;
     padding: 0%;
-    margin: 0%;
-    width: 8rem;
-    height: 2.5rem;
-    border: 2px solid red;
-    border-radius: 0.3rem;
-    top: 6px;
-    right: 122px;
-    cursor: pointer;
-}
-.button{
-    padding: 0%;
-    width: 8rem;
+    width: 12rem;
     height: 2.5rem;
     text-align: center;
     background-color: red;
     color: white;
     border: 1px solid red;
-    border-radius: 0.3rem;
+    border-radius: 8px;
     font-size: 20px;
-    z-index: 1;
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 1px 1px 3px 1px black;
 }
+.button::before, .button::after{
+    content: "";
+    position: absolute;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    transition: 0.5s;
+}
+.button::after{
+    top: 0;
+    left: 0;
+    width: 0;
+    border: none;
+    background: rgba(0,0,0,0.25);
+}
+.button:hover::after{
+    width: 100%;
+}
+.button:hover::before{
+    transform: translate(-3px,-3px);
+}
 .button:hover{
     border: 1px solid red;
-    /* background-color: transparent;
-    color: red; */
     box-shadow: none;
-    translate: 3px 3px;
+    transform: translate(3px,3px);
 }
