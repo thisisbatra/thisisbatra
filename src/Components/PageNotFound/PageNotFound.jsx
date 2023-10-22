@@ -13,7 +13,7 @@ const PageNotFound = () => {
                     <h1 className={Styles.heading}>404</h1>
                     <p className={Styles.para}>I am sorry, but the page you have requested was not found :(</p>
                     <div className={Styles.buttonBox}>
-                        <button onClick={onRedirectclick} className={Styles.button}>Redirect</button>
+                        <button onClick={onRedirectclick} className={Styles.button}>Redirect<i className="bi bi-arrow-right-circle-fill"></i></button>
                     </div>
                 </div>
             </section>
