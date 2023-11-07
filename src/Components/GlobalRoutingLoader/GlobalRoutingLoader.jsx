@@ -5,14 +5,22 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import PageNotFound from '../PageNotFound/PageNotFound';
 import ComingSoon from '../ComingSoon/ComingSoon';
 import Home from '../VersionOne/Home/Home';
+import About from '../VersionOne/About/About';
+import Education from '../VersionOne/Education/Education';
+import Skills from '../VersionOne/Skills/Skills';
+import Contact from '../VersionOne/Contact/Contact';
 
 const BrowseRoute=()=>{
     return(
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<VersionOne/>}>
-                    <Route index element={<Navigate to='/home'/>} />
+                    <Route index element={<Navigate to='/home'/>}/>
                     <Route path='home' element={<Home/>}/>
+                    <Route path='about' element={<About/>}/>
+                    <Route path='education' element={<Education/>}/>
+                    <Route path='skills' element={<Skills/>}/>
+                    <Route path='contact' element={<Contact/>}/>
                 </Route>
                 <Route path='comingSoon' element={<ComingSoon/>}/>
                 <Route path='*' element={<PageNotFound/>}/>
