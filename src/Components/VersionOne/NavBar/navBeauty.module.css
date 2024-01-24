@@ -1,7 +1,26 @@
-.con{
+.nav{
     display: flex;
-    border: 1px solid black;
-    width: 60%;
-    justify-content: center;
-    justify-self: end;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 0.5rem 2rem;
+    background: #1e1e1e;
+    color: white;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 50rem;
+    background: #787878;
+}
+.thumbNail{
+    display: flex;
+    gap: 1rem;
+}
+.thumbNail img{
+    width: 100%;
+    height: 2.5rem;
 }
