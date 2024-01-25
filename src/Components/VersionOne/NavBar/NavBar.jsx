@@ -7,12 +7,17 @@ const NavBar = () => {
         let value=e.target.value;
         value==="v1"?navigate('/'):navigate('/comingSoon');
     }
+    let toggleBtn=()=>{
+        let x=document.getElementById("brightnessIcon");
+        let y=document.getElementById("ulList");
+        console.log(x.className+" "+y.className);
+    }
     return (
         <nav className={styles.nav}>
-            <span>
+            <span className={`${styles.brightnessIcon}`} id="brightnessIcon">
                 <i className="bi bi-brightness-high"></i>
             </span>
-            <ul className={styles.list}>
+            <ul className={`${styles.list}`} id="ulList">
                 <li><Link to='/home'><i className="bi bi-house-door"></i></Link></li>
                 <li><Link to='/about'><i className="bi bi-info-circle"></i></Link></li>
                 <li><Link to='/education'><i className="bi bi-mortarboard"></i></Link></li>
@@ -28,6 +33,9 @@ const NavBar = () => {
             <span className={styles.thumbNail}>
                 <img src="../assets/meThumb.png" alt="thumbnail"/>
                 <h1>thisisbatra</h1>
+            </span>
+            <span className={styles.menuBar} onClick={toggleBtn}>
+                <i className="bi bi-three-dots-vertical"></i>
             </span>
         </nav>
     );
