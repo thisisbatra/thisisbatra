@@ -5,8 +5,9 @@
     align-items: center;
     font-size: 1.25rem;
     padding: 0.5rem 2rem;
-    background: #1e1e1e;
+    background: #252525;
     color: white;
+    height: 10vh;
 }
 .list{
     display: flex;

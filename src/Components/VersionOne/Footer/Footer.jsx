@@ -5,12 +5,14 @@ const Footer = () => {
     return (
         <footer className={style.footer}>
             <div className={style.groupLogo}>
-                <span><i className="bi bi-instagram"></i></span>
-                <span><i className="bi bi-linkedin"></i></span>
-                <span><i className="bi bi-github"></i></span>
-                <span><i className="bi bi-code-slash"></i></span>
+                <span className={style.circleLogo}><i className="bi bi-instagram"></i></span>
+                <span className={style.circleLogo}><i className="bi bi-linkedin"></i></span>
+                <span className={style.circleLogo}><i className="bi bi-github"></i></span>
+                <span className={style.circleLogo}><i className="bi bi-code-slash"></i></span>
             </div>
-            <h1>this website is developed & maintained by Nitin Batra</h1>
+            <div className={style.content}>   
+                <h1>this website is developed & maintained by Nitin Batra</h1>
+            </div>
         </footer>
     );
 }

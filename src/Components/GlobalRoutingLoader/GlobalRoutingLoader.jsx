@@ -41,7 +41,8 @@ const GlobalLoader = (props) => {
 
     return (
         <>
-            {valForLoader?<Loader/>:<BrowseRoute/>}
+            {/* {valForLoader?<Loader/>:<BrowseRoute/>} */}
+            <BrowseRoute/>
         </>
     );
 }
