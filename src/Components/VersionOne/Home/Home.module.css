@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 72vh;
+    min-height: 80vh;
     width: 100%;
     text-transform: capitalize;
 }
@@ -14,7 +14,15 @@
     flex-direction: column;
     gap: 1rem;
 }
+.h1{
+    font-family:system-ui;
+    font-weight: 700;
+}
+.green{
+    color: #34A853;
+}
 .para{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
 }
 .buttonBox{

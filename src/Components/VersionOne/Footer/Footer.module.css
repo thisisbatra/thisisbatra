@@ -1,32 +1,32 @@
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
-    background: #252525;
+    justify-content: space-around;
+    background: #F4C22F;
+    padding: 0.5rem 0;
 }
 .groupLogo{
     display: flex;
     gap: 0.5rem;
-    position: relative;
-    bottom: -1.5rem;
+    /* position: relative;
+    bottom: -1.5rem; */
 }
 .circleLogo{
     border-radius: 50%;
     background: #1E1E1E;
     color: white;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     cursor: pointer;
 }
 .content{
-    background: #F4C22F;
-    padding: 1.5rem 0 0.55rem 0;
-    width: 100%;
     text-align: center;
-    font-size: small;
+    font-size:x-small;
+    text-transform: capitalize;
+    font-weight: lighter;
 }

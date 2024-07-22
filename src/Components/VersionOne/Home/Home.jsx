@@ -6,7 +6,7 @@ const Home = () => {
         <section className={style.homeBody}>
             <div className={style.content}>
                 <h1 className={style.h1}>
-                    ^_^ hi, i'm nitin batra !
+                    ^_^ hi, i'm nitin batra <span className={style.green}>!</span>
                 </h1>
                 <p className={style.para}>a fullstack developer & a tech enthusiast</p>
                 <div className={style.buttonBox}>
