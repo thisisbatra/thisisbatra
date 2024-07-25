@@ -5,6 +5,8 @@
     justify-content: space-around;
     background: #F4C22F;
     padding: 0.5rem 0;
+    height: 6vh;
+    width: 100%;
 }
 .groupLogo{
     display: flex;
@@ -25,8 +27,18 @@
     cursor: pointer;
 }
 .content{
-    text-align: center;
     font-size:x-small;
     text-transform: capitalize;
     font-weight: lighter;
+    text-align: center;
+}
+.documentation{
+    cursor: pointer;
+    color: #EA4335;
+}
+@media only screen and (max-width:600px){
+    .footer{
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
 }

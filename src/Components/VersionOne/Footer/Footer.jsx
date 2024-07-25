@@ -7,7 +7,7 @@ import { SiLeetcode } from "react-icons/si";
 const Footer = () => {
     const openNewWindow=(e)=>{
         // console.log(e.target.id);
-        let id=e.target.id;
+        let id=e.currentTarget.id;
         let url='';
         switch(id){
             case 'documentation':
@@ -32,7 +32,7 @@ const Footer = () => {
         <footer className={style.footer}>
             <div className={style.content}>   
                 <h1>bringing ideas to life - nitin batra &copy; 2024 | 
-                    <span id='documentation' onClick={(e)=>openNewWindow(e)}>
+                    <span id='documentation' onClick={(e)=>openNewWindow(e)} className={style.documentation}>
                         detailed documentation
                     </span>
                 </h1>
