@@ -6,7 +6,7 @@ import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
     const openNewWindow=(e)=>{
-        // console.log(e.target.id);
+        console.log(e);
         let id=e.currentTarget.id;
         let url='';
         switch(id){

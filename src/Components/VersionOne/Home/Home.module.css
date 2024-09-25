@@ -1,11 +1,9 @@
 .homeBody{
-    background: #252525;
     color: white;
     font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 84vh;
     text-transform: capitalize;
 }
 .content{
