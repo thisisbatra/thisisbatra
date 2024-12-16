@@ -1,0 +1,95 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 0.5rem 2rem;
+    color: white;
+    width: 100%;
+}
+.connectbtn{
+    display: flex;
+    background: white;
+    color: #252525;
+    gap: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    border: 2px solid #252525;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+.connectbtn input{
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #252525;
+    cursor: pointer;
+}
+.connectbtn:hover{
+    background: #252525;
+    border: 2px solid white;
+    border-color: white;
+    color: white;
+    transition: 1s;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 50rem;
+    font-size: 1.25rem;
+}
+.list li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 25px;
+}
+.list li a:hover{
+    padding: 0.5rem 1rem;
+    border: 2px solid #4285F4;
+    border-radius: 25px;
+    /* background: #34A853; */
+    color: white;
+    transition: 1.5s;
+}
+.active{
+    background-color: #4285F4;
+}
+.thumbNail{
+    display: flex;
+    gap: 1rem;
+}
+.thumbNail h1{
+    font-weight: lighter;
+}
+.thumbNail img{
+    width: 100%;
+    height: 2.5rem;
+}
+.menuBar{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .nav{
+        flex-direction: column-reverse;
+        padding: 0.5rem 1rem;
+    }
+    .thumbNail{
+        align-self: flex-start;
+    }
+    .brightnessIcon,.list{
+        display: none;
+    }
+    .menuBar{
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        translate: 0 -0.5rem;
+    }
+}

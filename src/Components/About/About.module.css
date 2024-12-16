@@ -1,0 +1,28 @@
+.main{
+    display: flex;
+    gap: 2rem;
+    min-height: 30rem;
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+.ImgDiv{
+    width: 40%;
+    height: auto;
+}
+.Img{
+    width: 100%;
+    height: 100%;    
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    shape-outside: ellipse(45% 50%);
+    filter: blur(1px);
+    object-fit: cover;
+    object-position: center;
+}
+.contentSec{
+    width: 60%;
+    text-align: center;
+    font-size: 1.25rem;
+}

@@ -4,7 +4,7 @@ import style from './Home.module.css';
 
 const Home = () => {
     const newWindowOpen=()=>{
-        let resume=`${process.env.PUBLIC_URL}/assets/resume/nitin_resume.pdf`
+        let resume=`${process.env.PUBLIC_URL}/assets/resume/nitinResume.pdf`;
         window.open(resume,'_blank');
     }
     return (
@@ -13,7 +13,7 @@ const Home = () => {
                 <h1 className={style.h1}>
                     ^_^ hi, i'm nitin batra <span className={style.green}>!</span>
                 </h1>
-                <p className={style.para}>a fullstack developer & a tech enthusiast</p>
+                <p className={style.para}>software engineer & open source contributor</p>
                 <div className={style.buttonBox}>
                     <button className={style.button} onClick={newWindowOpen}>
                         Resume&nbsp;&nbsp;
