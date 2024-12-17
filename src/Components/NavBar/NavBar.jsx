@@ -20,7 +20,10 @@ const NavBar = () => {
             <ul className={`${styles.list}`} id="ulList">
                 <li><NavLink to='/' className={location.pathname==='/'?styles.active:""}>home</NavLink></li>
                 <li><NavLink to='/about' className={location.pathname==='/about'?styles.active:""}>about</NavLink></li>
-                <li><NavLink to='/background' className={location.pathname==='/background'?styles.active:""}>background</NavLink></li>
+                <li><NavLink to='/background'
+                 className={location.pathname.includes("/background")?styles.active:""}>
+                    background</NavLink>
+                </li>
                 <li><NavLink to='/blog' className={location.pathname==='/blog'?styles.active:""}>blog</NavLink></li>
             </ul>
             <span className={styles.thumbNail}>

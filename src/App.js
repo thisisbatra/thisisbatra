@@ -8,6 +8,9 @@ import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
 import Background from './Components/Background/Background';
 import Blog from './Components/Blog/Blog';
+import Education from './Components/Background/Education/Education';
+import Skills from './Components/Background/Skills/Skills';
+import Achievements from './Components/Background/Achievements/Achievements';
 
 const App = () => {
   return (
@@ -15,10 +18,14 @@ const App = () => {
             <NavBar/>
             <Routes>
                 <Route path='/' element={<Home/>}/>
-                <Route path='about' element={<About/>}/>
-                <Route path='background' element={<Background/>}/>
-                <Route path='blog' element={<Blog/>}/>
-                <Route path='contact' element={<Contact/>}/>
+                <Route path='/about' element={<About/>}/>
+                <Route path='/background' element={<Background/>}>
+                    <Route index element={<Education/>}/>
+                    <Route path='achievements' element={<Achievements/>}/>
+                    <Route path='skills' element={<Skills/>}/>
+                </Route>
+                <Route path='/blog' element={<Blog/>}/>
+                <Route path='/contact' element={<Contact/>}/>
                 <Route path='*' element={<PageNotFound/>}/>
             </Routes>
             <Footer/>
