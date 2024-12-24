@@ -5,7 +5,6 @@ const About = () => {
     return (
         <main className={styles.main}>
             <div className={styles.ImgDiv}>
-                <span className={styles.ImgSpan}></span>
                 <img src="../assets/photos/melinkedIn.jpg" alt="meLinkedIn" className={styles.Img} />
             </div>
             <section className={styles.contentSec}>

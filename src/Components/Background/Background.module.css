@@ -28,7 +28,6 @@
 }
 .list li:hover{
     transform: scale(1.2);
-    font-weight: bold;
     font-style: italic;
 }
 .red{
@@ -39,4 +38,8 @@
 }
 .green{
     border-left:8px solid #34A853;
+}
+.active{
+    font-weight: bold;
+    font-style: italic;
 }

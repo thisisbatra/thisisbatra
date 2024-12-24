@@ -1,7 +1,7 @@
 .main{
     display: flex;
     gap: 2rem;
-    min-height: 30rem;
+    height: fit-content;
     width: 50%;
     background-color: white;
     margin: 0 auto;
@@ -10,12 +10,6 @@
 }
 .ImgDiv{
     width: 40%;
-}
-.ImgSpan{
-    width: 100%;
-    height: auto;
-    border: 2px solid black;
-    border-radius: 20px;
 }
 .Img{
     width: 100%; 
