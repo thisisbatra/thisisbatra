@@ -7,10 +7,10 @@ import Contact from './Components/Contact/Contact';
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
 import Background from './Components/Background/Background';
-import Blog from './Components/Blog/Blog';
 import Education from './Components/Background/Education/Education';
 import Skills from './Components/Background/Skills/Skills';
 import Achievements from './Components/Background/Achievements/Achievements';
+import Project from './Components/Project/Project';
 
 const App = () => {
   return (
@@ -24,7 +24,7 @@ const App = () => {
                     <Route path='achievements' element={<Achievements/>}/>
                     <Route path='skills' element={<Skills/>}/>
                 </Route>
-                <Route path='/blog' element={<Blog/>}/>
+                <Route path='/project' element={<Project/>}/>
                 <Route path='/contact' element={<Contact/>}/>
                 <Route path='*' element={<PageNotFound/>}/>
             </Routes>

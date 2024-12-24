@@ -24,7 +24,7 @@ const NavBar = () => {
                  className={location.pathname.includes("/background")?styles.active:""}>
                     background</NavLink>
                 </li>
-                <li><NavLink to='/blog' className={location.pathname==='/blog'?styles.active:""}>blog</NavLink></li>
+                <li><NavLink to='/project' className={location.pathname==='/project'?styles.active:""}>project</NavLink></li>
             </ul>
             <span className={styles.thumbNail}>
                 <img src="../assets/meThumb.png" alt="thumbnail"/>
