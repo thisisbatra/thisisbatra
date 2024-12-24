@@ -6,6 +6,7 @@ const About = () => {
         <main className={styles.main}>
             <div className={styles.ImgDiv}>
                 <img src="../assets/photos/melinkedIn.jpg" alt="meLinkedIn" className={styles.Img} />
+                <div className={styles.ImgBorder}></div>
             </div>
             <section className={styles.contentSec}>
                 <p>

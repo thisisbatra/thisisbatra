@@ -4,14 +4,14 @@ import styles from './Education.module.css';
 const Education = () => {
     let educationData=[{
             id:1,
-            program:"master in computer application",
+            program:"masters in computer application",
             university:"GGSIPU",
             year:"2022-24",
             grade:"76%",
             desc:"expert in java & dsa"
         },{
             id:2,
-            program:"bachelor of vocational studies in software development",
+            program:"bachelors of vocational studies in software development",
             university:"GGSIPU",
             year:"2018-21",
             grade:"82%",

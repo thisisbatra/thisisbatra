@@ -7,15 +7,53 @@
     margin: 0 auto;
     border-radius: 20px;
     padding: 1.5rem;
+    align-items: center;
 }
+.ImgBorder{
+    height: 15rem;
+    width: 12rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    transform: rotate(-8deg);
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    top: 15.3rem;
+    left: 28rem;
+}
+.ImgBorder::after,.ImgBorder::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 1;
+}
+.ImgBorder::before {
+    top: -20%;
+    left: -30%;
+    border-width: 0 130px 150px 130px; /* Adjust triangle size */
+    border-color: transparent transparent #EA4335 transparent; /* Triangle color */
+    transform: rotate(-20deg);
+  }
+  
+  .ImgBorder::after {
+    top: 90%;
+    right: -30%;
+    border-width: 0 80px 50px 80px; /* Adjust triangle size */
+    border-color: transparent transparent #34A853 transparent; /* Triangle color */
+    transform: rotate(140deg); /* Rotate second triangle */
+  }
 .ImgDiv{
     width: 40%;
+    height: 15rem;
 }
 .Img{
     width: 100%; 
-    height: auto;   
-    background-position: center;
-    background-size: contain;
+    height: 100%;   
+    object-fit: contain;
+    position: relative;
+    z-index: 3;
 }
 .contentSec{
     width: 60%;
