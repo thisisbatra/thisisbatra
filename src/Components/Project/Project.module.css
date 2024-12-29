@@ -1,0 +1,66 @@
+.section{
+    width: 60%;
+    background-color: rgb(65, 65, 65);
+    margin: 0% auto;
+    padding: 0 1rem;
+    height: 30rem;
+    border-radius: 30px;
+}
+.cartHolder{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ProjectCart{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+.ProjectPrev{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(21, 21, 21);
+    border-radius: 25px 25px 0 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+.ProjectPrev span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+    opacity: 0;
+}
+.ProjectPrev:hover span{
+    opacity: 1;
+}
+.ProjectDesc{
+    width: 100%;
+    height: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ProjectDesc span{
+    display: flex;
+    gap: 1rem;
+}
+.ProjectDesc span ul li{
+    display: inline;
+}
