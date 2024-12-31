@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import PageNotFound from './Components/PageNotFound/PageNotFound';
+import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
@@ -26,7 +26,7 @@ const App = () => {
                 </Route>
                 <Route path='/project' element={<Project/>}/>
                 <Route path='/contact' element={<Contact/>}/>
-                {/* <Route path='*' element={<PageNotFound/>}/> */}
+                <Route path='*' element={<PageNotFound/>}/>
             </Routes>
             <Footer/>
     </BrowserRouter>
