@@ -13,9 +13,9 @@ const NavBar = () => {
     }
     return (
         <nav className={styles.nav}>
-            <span className={styles.connectbtn} onClick={navigateForContactUs}>
-                <p>Let's catch up!</p>
-                <FaArrowRight/>
+            <span className={styles.thumbNail}>
+                <img src="../assets/meThumb.png" alt="thumbnail"/>
+                <h1>thisisbatra</h1>
             </span>
             <ul className={`${styles.list}`} id="ulList">
                 <li><NavLink to='/' className={location.pathname==='/'?styles.active:""}>home</NavLink></li>
@@ -26,9 +26,9 @@ const NavBar = () => {
                 </li>
                 <li><NavLink to='/project' className={location.pathname==='/project'?styles.active:""}>project</NavLink></li>
             </ul>
-            <span className={styles.thumbNail}>
-                <img src="../assets/meThumb.png" alt="thumbnail"/>
-                <h1>thisisbatra</h1>
+            <span className={location.pathname==='/contact'?styles.connectBtnActive:styles.connectbtn} onClick={navigateForContactUs}>
+                <p>Let's catch up!</p>
+                <FaArrowRight/>
             </span>
             <span className={styles.menuBar} onClick={toggleBtn}>
                 <i className="bi bi-three-dots-vertical"></i>

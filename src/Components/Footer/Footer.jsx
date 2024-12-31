@@ -5,8 +5,9 @@ import { FiGithub } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
+    let date=new Date();
     const openNewWindow=(e)=>{
-        console.log(e);
+        // console.log(e);
         let id=e.currentTarget.id;
         let url='';
         switch(id){
@@ -28,10 +29,11 @@ const Footer = () => {
         // console.log(url);
         window.open(url,'_blank');
     }
+    // console.log(date.getFullYear());
     return (
         <footer className={style.footer}>
             <div className={style.content}>   
-                <h1>bringing ideas to life - nitin batra &copy; 2024 | 
+                <h1>bringing ideas to life - nitin batra &copy; {date.getFullYear()} | 
                     <span id='documentation' onClick={(e)=>openNewWindow(e)} className={style.documentation}>
                         detailed documentation
                     </span>

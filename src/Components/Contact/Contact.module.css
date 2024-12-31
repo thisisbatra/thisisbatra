@@ -1,0 +1,66 @@
+.main{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    gap: 2rem;
+    background: white;
+    margin: 0 auto;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem;
+}
+.desc{
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+.desc p{
+    font-size: 1.25rem;
+    color: gray;
+}
+
+.form{
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1rem;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+.Input{
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: black;
+    border: 1px solid #34A853;
+    border-radius: 7px;
+}
+.subjectInput{
+    margin: 0 1rem;
+}
+.TextArea{
+    height: 10rem;
+    resize: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: black;
+    border: 1px solid #34A853;
+    border-radius: 7px;
+}
+.submitBtn{
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #34A853;
+    border: 1px solid #34A853;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
