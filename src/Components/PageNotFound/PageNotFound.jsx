@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Styles from "./PageNotFound.module.css"
+import Styles from "./pageNotFound.module.css"
 const PageNotFound = () => {
     const nav=useNavigate()
     const onRedirectclick=()=>{
