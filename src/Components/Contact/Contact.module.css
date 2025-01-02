@@ -57,15 +57,18 @@
 .submitBtn{
     padding: 0.5rem;
     cursor: pointer;
-    background-color: white;
+    background-color: #34A853;
+    color: white;
     border: 1px solid #34A853;
     border-radius: 50px;
     text-align: center;
-    color: #34A853;
     font-size: 1.2rem;
-    transition: 0.5s;
+    transition: 1s;
+    box-shadow: 2px 2px 5px 1px gray;
 }
 .submitBtn:hover{
-    background-color: #34A853;
-    color: white;
+    color: #34A853;
+    background-color: white;
+    box-shadow: none;
+    transition: 1s;
 }
